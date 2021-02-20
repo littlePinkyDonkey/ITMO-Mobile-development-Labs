@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/authActivityBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_go_to_activity_one"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/profileActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_go_to_activity_two"
+        android:layout_below="@+id/authActivityBtn"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/settingsActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_go_to_activity_three"
+        android:layout_below="@+id/profileActivity"
+        android:padding="10dp"
+        />
+
+    <Button
+        android:id="@+id/feedbackActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_go_to_activity_four"
+        android:layout_below="@+id/settingsActivity"
+        android:padding="10dp"
+        />
+
+</RelativeLayout>

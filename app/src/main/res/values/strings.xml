@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">lab2</string>
+    <string name="profile">Профиль</string>
+    <string name="settings">Настройки</string>
+    <string name="feedback">Обратная связь</string>
+
+    <string name="main_go_to_activity_one">Activity one</string>
+    <string name="main_go_to_activity_two">Activity two</string>
+    <string name="main_go_to_activity_three">Activity three</string>
+    <string name="main_go_to_activity_four">Activity four</string>
+
+    <string name="phone_placeholder">+7 (_ _ _) _ _ _ - _ _ - _ _</string>
+
+    <string name="auth_start_text">войти или зарегестрироваться</string>
+    <string name="auth_info_label">Мы отправим на номер SMS-сообщение с кодом подтверждения</string>
+    <string name="auth_get_code_button">получить код</string>
+    <string name="auth_conditions_label">При входе вы соглашаетесь с условиями</string>
+
+    <string name="profile_email">Email</string>
+    <string name="profile_email_input">Укажите e-mail</string>
+    <string name="profile_password">Ваш пароль для контакт-центра</string>
+    <string name="profile_bonuses">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio eligendi perspiciatis
+        nemo quod asperiores temporibus voluptatum alias eos blanditiis labore. Obcaecati quod quae
+        nobis illo!
+    </string>
+
+    <string name="settings_push">Push-уведомления</string>
+    <string name="settings_city_auto_definition">Определять город автоматически</string>
+    <string name="settings_touch_id_enable">Вход по отпечатку пальца</string>
+    <string name="settings_drop_authorization">Сбросить авторизацию</string>
+
+    <string name="feedback_name">Ваше имя</string>
+    <string name="feedback_phone_number">Номер телефона</string>
+    <string name="feedback_email">Ваш e-mail адрес</string>
+    <string-array name="feedback_theme_spinner">
+        <item>Тема обращения</item>
+        <item>Тема 1</item>
+        <item>Тема 2</item>
+    </string-array>
+    <string name="feedback_comment_hint">Комментарий</string>
+    <string name="feedback_personal_data_processing_consent">
+        Я даю согласие на обработку своих персональных данных. С политикой обеспечения безопасности
+        персональных данных САО "РЕСО-Гарантия" ознакомлен.
+    </string>
+    <string name="send_toolbar">send</string>
+</resources>

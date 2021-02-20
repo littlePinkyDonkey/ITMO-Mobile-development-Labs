@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basic_grey_color"
+    tools:context=".ActivityThree">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:layout_alignParentTop="true"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:navigationIcon="@drawable/ic_menu"
+        />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/pushSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:checked="true"
+        android:text="@string/settings_push"
+        android:theme="@style/Switch"
+        android:padding="20dp"
+        android:background="@color/basic_white_color"
+        />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/citySwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pushSwitcher"
+        android:checked="true"
+        android:text="@string/settings_city_auto_definition"
+        android:theme="@style/Switch"
+        android:padding="20dp"
+        android:background="@color/basic_white_color"
+        android:layout_marginTop="5dp"
+        />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/touchIdSwitcher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/citySwitcher"
+        android:checked="true"
+        android:text="@string/settings_touch_id_enable"
+        android:theme="@style/Switch"
+        android:padding="20dp"
+        android:background="@color/basic_white_color"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/dropAuthBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/touchIdSwitcher"
+        android:layout_centerInParent="true"
+        android:text="@string/settings_drop_authorization"
+        android:textAllCaps="false"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/basic_white_color"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:layout_marginTop="20dp"
+        />
+
+    <TextView
+        android:id="@+id/appVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        />
+
+</RelativeLayout>

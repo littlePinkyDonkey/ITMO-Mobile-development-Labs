@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/basic_grey_color"
+    tools:context=".ActivityFour">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/feedback_main_color"
+        android:layout_alignParentTop="true"
+        app:titleTextColor="@color/basic_white_color"
+        app:navigationIcon="@drawable/ic_full_left_arrow"
+        app:menu="@menu/menu_four_toolbar"
+        />
+
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/feedback_name"
+        android:textColor="@color/feedback_main_color"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="5dp"
+        />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nameTextView"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        />
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/feedback_phone_number"
+        android:layout_below="@id/nameEditText"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="5dp"
+        />
+
+    <EditText
+        android:id="@+id/phoneEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_placeholder"
+        android:inputType="phone"
+        android:layout_below="@+id/phoneTextView"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:id="@+id/emailTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/feedback_email"
+        android:layout_below="@+id/phoneEditText"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="5dp"
+        />
+
+    <EditText
+        android:id="@+id/emailEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_below="@+id/emailTextView"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="10dp"
+        />
+
+    <Spinner
+        android:id="@+id/themeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/emailEditText"
+        android:entries="@array/feedback_theme_spinner"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:padding="5dp"
+       />
+
+    <EditText
+        android:id="@+id/commentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/feedback_comment_hint"
+        android:layout_below="@+id/themeSpinner"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="5dp"
+        />
+
+    <RelativeLayout
+        android:id="@+id/acceptContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/commentEditText"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:padding="5dp">
+
+        <CheckBox
+            android:id="@+id/acceptCheckbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            />
+
+        <TextView
+            android:id="@+id/infoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/feedback_personal_data_processing_consent"
+            android:layout_toEndOf="@+id/acceptCheckbox"
+            android:padding="5dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

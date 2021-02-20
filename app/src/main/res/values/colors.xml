@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="basic_black_color">#000000</color>
+    <color name="basic_white_color">#FFFFFF</color>
+    <color name="basic_grey_color">#DAEBEBEB</color>
+
+    <color name="colorPrimary">#5BB22D</color>
+    <color name="colorPrimaryDark">#00862E</color>
+    <color name="colorAccent">#E1B869</color>
+    <color name="feedback_main_color">#218140</color>
+
+    <color name="auth_text_main_color">@color/basic_black_color</color>
+    <color name="auth_button_background_color">@color/basic_black_color</color>
+    <color name="auth_button_text_color">@color/basic_white_color</color>
+    <color name="auth_link_color">@color/email_input_text_hint_color</color>
+
+    <color name="email_input_text_hint_color">@color/colorAccent</color>
+
+    <color name="switcher_track_color">#D6ECC9</color>
+</resources>

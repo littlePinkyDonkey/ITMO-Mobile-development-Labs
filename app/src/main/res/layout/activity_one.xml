@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ActivityOne">
+
+    <ImageView
+        android:id="@+id/closeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:onClick="onClose"
+        android:src="@drawable/cancel"
+        android:layout_alignParentEnd="true"
+        />
+
+    <TextView
+        android:id="@+id/authTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/auth_start_text"
+        android:textColor="@color/auth_text_main_color"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_above="@+id/infoTextView"
+        />
+
+    <TextView
+        android:id="@+id/infoTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/auth_info_label"
+        android:textColor="@color/auth_text_main_color"
+        android:layout_above="@+id/editTextPhone"
+        />
+
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:hint="@string/phone_placeholder"
+        android:inputType="phone"
+        android:layout_centerInParent="true"
+        />
+
+    <Button
+        android:id="@+id/getCodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginEnd="9dp"
+        android:padding="10dp"
+        android:background="@color/auth_button_background_color"
+        android:text="@string/auth_get_code_button"
+        android:textColor="@color/auth_button_text_color"
+        android:layout_below="@+id/editTextPhone"
+        android:layout_centerInParent="true"
+        />
+
+
+    <TextView
+        android:id="@+id/conditionsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:focusable="true"
+        android:linksClickable="true"
+        android:layout_marginBottom="10dp"
+        />
+
+
+</RelativeLayout>
