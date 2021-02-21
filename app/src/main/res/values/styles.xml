@@ -6,11 +6,13 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:navigationBarColor">@color/colorPrimaryDark</item>
     </style>
     
     <style name="Switch" parent="Theme.AppCompat.Light">
         <item name="colorSwitchThumbNormal">@color/colorPrimary</item>
         <item name="trackTint">@color/switcher_track_color</item>
+        <item name="colorControlActivated">@color/colorPrimary</item>
     </style>
 
 </resources>

@@ -19,7 +19,7 @@ public class ActivityOne extends AppCompatActivity {
 
         view = findViewById(R.id.conditionsTextView);
 
-        view.setText(Html.fromHtml("При входе вы соглашаетесь <a href=\"www.google.com\">с условиями</a>"));
+        view.setText(Html.fromHtml("При входе вы соглашаетесь <a href=\"http://www.google.com\">с условиями</a>"));
         view.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
