@@ -17,9 +17,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ActivityOne" />
-        <activity android:name=".ActivityTwo" android:label="@string/profile" />
-        <activity android:name=".ActivityThree" android:label="@string/settings"/>
-        <activity android:name=".ActivityFour" android:label="@string/feedback"/>
+        <activity android:name=".ActivityTwo" android:label="@string/profile" android:theme="@style/AppTheme.GreenNavigationBar"/>
+        <activity android:name=".ActivityThree" android:label="@string/settings" android:theme="@style/AppTheme.GreenNavigationBar"/>
+        <activity android:name=".ActivityFour" android:label="@string/feedback" android:theme="@style/AppTheme.GreenNavigationBar"/>
     </application>
 
 </manifest>
